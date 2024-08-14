@@ -2,7 +2,6 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import styles from '../styles/Home.module.scss';
 
-// Dynamically import the DynamicPattern component without server-side rendering (ssr)
 const DynamicPattern = dynamic(() => import('../components/DynamicPattern'), { ssr: false });
 
 export default function Home() {
