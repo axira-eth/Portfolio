@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import styles from '../styles/Pattern.module.scss';
 
 const DynamicPattern = () => {
   const canvasRef = useRef(null);
@@ -61,7 +60,7 @@ const DynamicPattern = () => {
     });
   }, []);
 
-  return <canvas ref={canvasRef} className={styles.canvas}></canvas>;
+  return <canvas ref={canvasRef}></canvas>;
 };
 
 export default DynamicPattern;
